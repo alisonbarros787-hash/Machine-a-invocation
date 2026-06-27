@@ -1,17 +1,37 @@
 body{
-    background-color:#201e22;
-    font-family: "sofia-pro-soft", "sofia-pro fallback", system-ui, sans-serif;
-    color: aliceblue;
-}
-
-h2{
+    background-image:url(Machine-a-invocation/images/pokemonexplorateursduciel.jpg);
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    min-height: 100vh;          
+    color:#60C292;
+    font-family: 'MaPolice',sans-serif;
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    align-items: center;  
+}
+@font-face {
+  font-family: 'MaPolice';
+  src: url('Machine-a-invocation/images/Pixelate-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+h2{
+    padding-left: 5rem;
+    font-size:  50px;
+    font-weight:700;
 }
 
-
-#cristalball{
+h1{
+    padding-left: 3rem;
+    font-size: 45px;
+}
+#pokeball{
+    height: 60px;
+    width: 60px;
+}
+#masterball{
     height: 60px;
     width: 60px;
 }
@@ -28,17 +48,21 @@ label[for="name"]{
 }
 
 #premon{
-    padding: 5px;
-    border:2px solid #99D6F0;
-    border-radius: 5px;
+    padding: 10px;
+    border:3px solid #ce2e2e;
 
 }
+#creature{
+    padding: 3px;
+}
+
 .pack{
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 5px;
     padding: 10px;
-    margin: 5rem;
+    margin: 3rem;
     border-bottom: 5px solid transparent; border-image: linear-gradient(45deg, #7f77dd, #5dcaa5 ,#F198B9, #E5F198) 1;
 }
 
@@ -50,7 +74,6 @@ label[for="soustext"]{
 }
 
 .option{
-    font-family: "sofia-pro", "sofia-pro fallback", system-ui, sans-serif;
     font-weight: bold;
 }
 
@@ -61,36 +84,75 @@ label[for="soustext"]{
 }
 
 #button{
-    font-family:"sofia-pro", "sofia-pro fallback", system-ui, sans-serif;
+    font-family: 'MaPolice',sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
     font-weight: bold;
-    color:  #FF8A99;
-    background: #FFB8C1;
-    border:2px solid #ff9ab5;
-    width: 75px;
-    padding: 3px;
-    height: 35px;
-    border-radius: 12px;
+    color:  white;
+    background:#F55333;
+    border:2px solid #F4320B;
     margin-left: 8px;
-    box-shadow:3px 5px 4px #4e66ad;
-    
+    box-shadow:3px 3px 4px #316152;
+    padding: 3px;
+    appearance: button;
+    border: solid transparent;
+    border-radius: 16px;
+    font-size: 15px;
+
+}
+
+#button:active {
+  transform: scale(0.96);
 }
 
 
 .container{
-    border: 10px solid transparent; border-image: linear-gradient(45deg, #7f77dd, #5dcaa5 ,#F198B9, #E5F198) 1; 
-    background-color:#607BCD ;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    margin-right: 20rem;
-    margin-left: 30rem;
-    width: 50rem;
-    height:40rem;
-    box-shadow: 3px 5px 3px rgb(21, 20, 20);
+    border: 10px solid ; border-image: linear-gradient(45deg, #77dd94, #5dcaa5 ,#6aaa69, #5dd2a5) 1; 
+    background:#DEFAE8;
+    margin-top: 2rem;
+    width: 40rem;
+    height:30rem;
+    box-shadow: 3px 5px 3px rgb(60, 58, 58);
 }
     
+.zoneinvoc{
+    margin-left: 20rem;
+    height: 100px;
+}
 
+#message{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
 
+#recommencer{
+    margin-left: 10rem;
+    text-align: center;
+    font-family: 'MaPolice',sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: bold;
+    color:  white;
+    background:#F55333;
+    padding: 3px;
+    box-shadow:3px 3px 4px #316152;
+    border: solid transparent;
+    border-radius: 16px;
+    font-size: 15px;
+}
+
+.partietwo{
+    align-items: center;
+    border: 10px solid ; border-image: linear-gradient(45deg, #77dd94, #5dcaa5 ,#6aaa69, #5dd2a5) 1; 
+    background:#DEFAE8;
+    margin-top: 2rem;
+    width: 40rem;
+    height:30rem;
+    box-shadow: 3px 5px 3px rgb(60, 58, 58);
+}
+.cache {
+  display: none;
+}
 
        
