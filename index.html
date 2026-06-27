@@ -10,37 +10,39 @@
     </head>
 
     <body>
-        <form> 
+        <form id="formulaire"> 
             <section class="container">
-                <h2>Machine a Invocation<img id="cristalball" src="Machine-a-invocation\images\25fb2a2c9c514d1710bcc51860a517bf-removebg-preview.png"></h2>
+                <h2>Machine a Invocation</h2>
                 <div class="inscription">
                     <label for="name">Veuiller ecrire votre Prénom :</label>
-                    <input type="texte" id="premon" placeholder="Ex : Bob">
+                    <input type="text" id="prenom" placeholder="Ex : Bob">
                 </div>
-                 <div class="pack">
-                   <label for="soustext">Créatures du collectionneur</label>
+                   <label for="soustext">Selectionner votre Pokémon</label>
+                   <div class="pack">
                      <select id="creature">
-                      <option class="option">- Choisie une créature -</option>
-                        <option><p>Le Chat-Octo</p></option>
-                        <option><p>Le Dragon-Debug</p></option>
-                        <option><p>La Licorne-CSS</p></option>
-                        <option><p>Le Renard-Refacto</p></option> 
-                      <input type="button" id="button" value="Invoquer">
+                      <option class="option">- Choisie un compagnon -</option>
+                        <option value="Lucario">Lucario</option>
+                        <option value="Noctalie">Noctalie</option>
+                        <option value="Ho-Oh">Ho-Oh</option>
+                        <option value="Ronflex">Ronflex</option> 
                      </select>
+                     <input type="submit" id="button" value="Lancer pokéball" ><img id="pokeball" src="Machine-a-invocation/images/pokepixel-removebg-preview.png">
                  </div>
-                 <div class="pokemon">
-                   <img class="zoneinvoc" src="">
                   
-                 </div>
                  
             </section>
+ </form>
 
             <section id="resultat" class="cache">
-                <p id="message"></p>
+                <section class="partietwo">
+                 <h1>Félicitation !! Tu as réussie !</h1>
 
+                 <img class="zoneinvoc" src="" alt="Pokemon invoque">
+                 <p id="message"></p>
+
+                 <input type="click" id="recommencer" value="Renvoyer le Pokémon">
+                </section>
             </section>
-        </form>
-
 
        <script src="script.js" defer></script>
     </body>
